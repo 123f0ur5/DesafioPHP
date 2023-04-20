@@ -2,14 +2,16 @@
  
 Para rodar o projeto basta seguir o passo a passo!
 
-1. Selecionar um local para salvar o projeto, aqui vou salvar na raiz do D:
-<img src="https://prnt.sc/MdcY3G7sZ_f8"/>
+1. Selecionar um local para salvar o projeto, aqui vou salvar na raiz do D:<br>
+<img src="https://github.com/123f0ur5/DesafioPHP/blob/main/imgs/D.png?raw=true"/>
+
 
 2. Comando para clonar o projeto
 
 ```
 git clone https://github.com/123f0ur5/DesafioPHP.git
 ```
+<img src="https://github.com/123f0ur5/DesafioPHP/blob/main/imgs/CLONE.png"/>
 
 3. Entrar na pasta criada
 ```
@@ -20,12 +22,13 @@ cd DesafioPHP
 ```
 docker compose up --build -d
 ```
+<img src="https://github.com/123f0ur5/DesafioPHP/blob/main/imgs/DOCKERBUILD.png"/>
 
 5. Agora vamos criar o banco de dados no container do SQL, rode o comando e digite a senha: root
 ```
 mysql -u root -p
 ```
-
+<img src="https://github.com/123f0ur5/DesafioPHP/blob/main/imgs/SQL.png"/>
 6. Ao chegar no terminal do sql, rode os comandos do arquivo usuarios.sql
 ```
 CREATE DATABASE users;
@@ -41,6 +44,7 @@ CREATE TABLE `usuarios` (
   PRIMARY KEY (`id`)
 );
 ```
+<img src="https://github.com/123f0ur5/DesafioPHP/blob/main/imgs/CREATINGTABLE.png"/>
 
 7. Para confirmar se deu tudo certo, pode rodar o comando
 ```
@@ -53,6 +57,7 @@ localhost:8000
 ```
 
 9. O site será renderizado e assim que clicar em gravar, irá criar um registro no banco de dados.
+<img src="https://github.com/123f0ur5/DesafioPHP/blob/main/imgs/WEBSITE.png"/>
 
 
 10. Caso queira ver o registro no banco de dados, execute o comando
@@ -60,4 +65,5 @@ localhost:8000
 ```
 SELECT * FROM usuarios;
 ```
+<img src="https://github.com/123f0ur5/DesafioPHP/blob/main/imgs/CONSULTASQL.png"/>
 
