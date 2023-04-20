@@ -28,22 +28,26 @@ docker compose up --build -d
 ```
 mysql -u root -p
 ```
-<img src="https://github.com/123f0ur5/DesafioPHP/blob/main/imgs/SQL.png"/>
+<img src="https://github.com/123f0ur5/DesafioPHP/blob/main/imgs/SQL.png" height="220px"/>
 6. Ao chegar no terminal do sql, rode os comandos do arquivo usuarios.sql
+
 ```
 CREATE DATABASE users;
-
+```
+```
 USE users;
-
-CREATE TABLE `usuarios` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `usuario` varchar(40) NOT NULL UNIQUE,
-  `imagem` varchar(60) NOT NULL,
-  `data_registro` date NOT NULL,
-  `quantidade_repositorio` smallint NOT NULL,
-  PRIMARY KEY (`id`)
+```
+```
+CREATE TABLE 'usuarios' (
+  'id' int NOT NULL AUTO_INCREMENT,
+  'usuario' varchar(40) NOT NULL UNIQUE,
+  'imagem' varchar(60) NOT NULL,
+  'data_registro' date NOT NULL,
+  'quantidade_repositorio' smallint NOT NULL,
+  PRIMARY KEY ('id')
 );
 ```
+
 <img src="https://github.com/123f0ur5/DesafioPHP/blob/main/imgs/CREATINGTABLE.png"/>
 
 7. Para confirmar se deu tudo certo, pode rodar o comando
@@ -57,7 +61,7 @@ localhost:8000
 ```
 
 9. O site será renderizado e assim que clicar em gravar, irá criar um registro no banco de dados.
-<img src="https://github.com/123f0ur5/DesafioPHP/blob/main/imgs/WEBSITE.png"/>
+<img src="https://github.com/123f0ur5/DesafioPHP/blob/main/imgs/WEBSITE.png" height="200px"/>
 
 
 10. Caso queira ver o registro no banco de dados, execute o comando
